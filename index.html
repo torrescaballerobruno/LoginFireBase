@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bambu mobile</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/inputs.css">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+
+    <!--script src="js/bootstrap.min.js"></script-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script src="js/validacion.js"></script>
+
+  </head>
+
+  <body>
+    <img src="img/bambu.png" class="img-fluid mb-6" alt="Bambu mobile">
+    <br><br><br><br>
+
+    <div class="container p-6">
+      <div class="row">
+        <div class="col">
+          <div class="container">
+            <div class="row justify-content-md-center mb-3">
+              <h3 class="text-danger">Iniciar sesión</h3>
+            </div>
+              <div class="row justify-content-md-center left-addon mb-4">
+                <span class="iconic iconic-envelope-closed iconic-sm" title="envelope closed" aria-hidden="true"></span>
+                <input type="text"  id="email" class="col-md-8" placeholder="correo@ejemplo.com" />
+              </div>
+              <div class="row justify-content-md-center left-addon mb-3">
+                <span class="iconic iconic-key iconic-sm" title="key" aria-hidden="true"></span>
+                <input type="password" id="pwd" placeholder="*Contraseña" class="col-md-8" pattern="[A-Za-z0-9!?-]{8,16}" required><br>
+              </div>
+              <div class="row justify-content-md-center p-2 bg-gradient-danger">
+                <input type="submit" id="iniciarsesion" class="col-md-5 btn btn-danger col-md-8" value="Iniciar sesión">
+              </div>
+            <div class="row justify-content-md-center ">
+              <a href="#" class="text-dark"><h6>¿Olvidaste tu contraseña?</h6 ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="container">
+            <div class="row justify-content-md-center mb-3">
+              <h3 class="text-danger">Crear cuenta</h3>
+            </div>
+            <div class="row justify-content-md-center mb-3">
+              <ul>
+                <li>Abre una cuenta de forma gratuita</li>
+                <li class="text-justify">Tenemos 120 sucursales en 10 estados diferentes a tu disposición</li>
+                <li>Tu eliges donde entrar</li>
+                <li>Puedes darte de baja cuando quieras</li>
+              </ul>
+            </div>
+            <div class="row justify-content-md-center">
+              <input type="submit" class=" col-md-8 btn btn-danger" value="CREAR CUENTA">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
